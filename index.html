@@ -4,129 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flashlight Kit - San Antonio Circuit Makers</title>
-    <style>
-        /* Use the same CSS as your main site for consistency */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        .header-left {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-        .header-logo {
-            height: 200px; /* Adjust based on your logo size */
-        }
-        .header-text {
-            display: flex;
-            flex-direction: column;
-            gap: 0.25rem;
-        }
-        .header-title {
-            font-size: 1.8rem;
-            font-weight: bold;
-            margin: 0;
-        }
-        .header-subtitle {
-            font-size: 1.1rem;
-            margin: 0;
-            color: rgba(255, 255, 255, 0.9);
-        }
-        .header-buttons {
-            display: flex;
-            gap: 10px;
-        }
-        .header-buttons a {
-            color: white;
-            text-decoration: none;
-            padding: 0.5rem 1rem;
-            background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        .header-buttons a:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-        }
-        .container {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 1rem;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 1rem 0;
-        }
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background-color: #333;
-            color: white;
-            margin-top: 2rem;
-        }
-    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://satxcircuitmakers.github.io/Main/css/style.css">
+
 </head>
 <body>
     <!-- Unified Header Bar -->
-    <header>
-        <div class="header-left">
-            <img src="images/logo.jpg" alt="San Antonio Circuit Makers Logo" class="header-logo">
-            <div class="header-text">
-                <div class="header-title">
-                    San Antonio Circuit Makers
-                </div>
-                <div class="header-subtitle">
-                    Flashlight Kit Resources
-                </div>
-            </div>
-        </div>
-        <div class="header-buttons">
-            <a href="https://www.sanantoniocircuitmakers.com">Main Site</a>
-            <a href="https://satxcircuitmakers.github.io/">Root Wiki</a>
-        </div>
-    </header>
+    <div id="header"></div>
 
     <div class="container">
-        <h1>Flashlight Kit</h1>
+        <h1>Robot Kit</h1>
         <p>
-            Welcome to the Flashlight Kit resource page! Here, you'll find everything you need to assemble and understand your soldering kit flashlight.
+            Welcome to the Robot Kit resource page! Here, you'll find everything you need to assemble and understand your soldering kit robot.
         </p>
 
         <!-- Section 1: Instructions -->
         <div class="step">
             <h2>Instructions</h2>
-            <img src="images/flashlight-complete.jpg" alt="Completed Flashlight">
+            <img src="images/36.jpg" alt="Completed Flashlight" width="500" height="600">
             <p>Follow the step-by-step guide to assemble your flashlight:</p>
             <ul>
-                <li><a href="https://satxcircuitmakers.github.io/FlashlightKit/instructions.pdf">Download Instructions (PDF)</a></li>
-                <li><a href="https://satxcircuitmakers.github.io/FlashlightKit/instructions.html">View Instructions Online</a></li>
+                <li><a href="images/instructions.pdf">Download Instructions (PDF)</a></li>
+                <li><a href="https://satxcircuitmakers.github.io/RobotKit/instructions.html">View Instructions Online</a></li>
             </ul>
         </div>
 
         <!-- Section 2: PCB Files -->
         <div class="step">
             <h2>PCB Files</h2>
-            <img src="images/flashlight-pcb.jpg" alt="Flashlight PCB">
+            <img src="images/complete.mp4" alt="">
             <p>Download the PCB design files for the flashlight kit:</p>
             <ul>
-                <li><a href="https://satxcircuitmakers.github.io/FlashlightKit/pcb-gerber.zip">Gerber Files (ZIP)</a></li>
-                <li><a href="https://satxcircuitmakers.github.io/FlashlightKit/pcb-schematic.pdf">Schematic (PDF)</a></li>
+                <li><a href="https://www.pcbway.com/project/shareproject/LED_Blinking_Robot_Badge___Soldering_Kit.html">PCB source</a></li>
+                <li><a href="https://satxcircuitmakers.github.io/RobotKit/BOM.csv">Bill of Materials</a></li>
             </ul>
         </div>
 
@@ -135,9 +45,8 @@
             <h2>Additional Resources</h2>
             <p>Explore these resources to learn more about soldering and electronics:</p>
             <ul>
-                <li><a href="https://www.instructables.com/Basic-Soldering-Guide/">Basic Soldering Guide</a></li>
-                <li><a href="https://www.sparkfun.com/solderingguide">SparkFun Soldering Tutorial</a></li>
-                <li><a href="https://www.electronics-tutorials.ws/">Electronics Tutorials</a></li>
+                <li><a href="https://www.makerspaces.com/how-to-solder/">Makersspace's Basic Soldering Guide</a></li>
+                <li><a href="https://learn.adafruit.com/adafruit-guide-excellent-soldering/tools">Adafruit's Soldering Tutorial</a></li>
             </ul>
         </div>
 
@@ -151,5 +60,12 @@
     <footer>
         &copy; 2024 San Antonio Circuit Makers. All rights reserved.
     </footer>
+    <script>
+        $(function(){
+          $("#header").load("https://satxcircuitmakers.github.io/Main/site/header.html",function(){
+            $('#header-subtitle').html('Flashlight Kit Resources');
+          });
+        });
+    </script>
 </body>
 </html>
